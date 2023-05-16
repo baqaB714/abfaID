@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/asset/fonts/yekan/BYekan-webfont.ttf">
+    <title>تولید شناسه آبفا</title>
+</head>
+
+<body>
+
+    <div class=" row d-flex flex-column align-items-center p-4">
+        <div class="text-center d-flex flex-column mb-3 justify-content-center align-items-center" id="logo_box">
+            <img src="/asset/image/logoabfa.png" class="w-25 mt-2">
+            <span class="text-secondary">   شرکت آب و فاضلاب استان مرکزی</span>
+        </div>
+        <h5 >تولید شناسه قبض و پرداخت </h5>
+        <div class=" col-12 col-sm-3 Entrance d-flex flex-column align-items-center">
+            نام شهر:
+            <select class="w-100 p-2" name="" id="companies"></select>
+            شماره اشتراک:
+            <input id="consumerID" class="w-100 p-2" type="number">
+            مبلغ:
+            <input id="Amount" class="w-100 p-2" type="number">
+            <div id="Amount_show" class="w-100 p-2 text-center" ></div>
+        </div>
+
+        <button class="btn btn-success mt-3" id="confirmBtn"> کلیک کن</button>
+
+        <div class=" col-12 col-sm-3 Entrance d-flex flex-column align-items-center mt-3">
+            شناسه قبض:
+            <span id="billID" class=" idsFont w-100 bg-warning rounded text-center p-2">0</span>
+            شناسه پرداخت:
+            <span id="paymentID" class=" idsFont w-100 bg-warning rounded text-center p-2">0</span>
+        </div>
+
+    </div>
+
+
+
+    <script src="/asset/js/moment-jalaali.js"></script>
+
+
+    <script src="/asset/main.js"></script>
+
+</body>
+
+</html>
